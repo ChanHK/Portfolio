@@ -1,0 +1,175 @@
+.HeaderContainer {
+  background-color: #0f0e17;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 20px;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.NavList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.NavItem {
+  margin-right: 20px;
+}
+
+.NavItem:last-child {
+  margin-right: 0;
+}
+
+.NavItem a {
+  color: #fffffe;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Button {
+  background-color: #ff8906;
+  border: none;
+  width: 80px;
+  border-radius: 4px;
+  height: 30px;
+
+  color: #fffffe;
+  font-weight: bold;
+  cursor: pointer;
+
+  margin-left: 20px;
+}
+
+/* .Button:hover {
+  background-color: #f0f0f0;
+} */
+
+.MainContainer {
+  background-color: #0f0e17;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.IntroContainer {
+  height: 100vh;
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.IntroText {
+  color: #fffffe;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.SubContainer {
+  min-height: 100vh;
+  width: 70%;
+  /* padding: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.MeContainer {
+  width: 50%;
+  height: auto;
+  overflow-x: hidden;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+
+.title {
+  color: #fffffe;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.title:hover {
+  animation: bounce 0.5s ease;
+}
+
+.paragraph {
+  color: #a7a9be;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.CloudContainer {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1270px) {
+  .AboutContainer {
+    flex-direction: column;
+  }
+
+  .MeContainer {
+    width: 100%;
+  }
+
+  .CloudContainer {
+    width: 100%;
+  }
+}
+
+.ExpContainer {
+  overflow-x: hidden;
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.projectsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.OtherProjectsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.SmallProjectTitle {
+  color: #fffffe;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

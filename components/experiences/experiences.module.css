@@ -1,0 +1,47 @@
+.MainContainer {
+  height: 300px;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.TabList {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.TabList button {
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  min-width: 150px;
+  height: 42px;
+  color: #f25f4c;
+  text-align: left;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0px 0px 0px 10px;
+}
+
+.TabList button:hover {
+  color: #e53170;
+  background-color: #1a1a27;
+}
+
+.DetailsContainer {
+  margin-left: 20px;
+  min-width: 500px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .TabList button {
+    padding: 0px 15px 2px;
+  }
+}

@@ -1,0 +1,33 @@
+.RoleContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.RoleText {
+  color: #f2f2f2;
+}
+
+.WorkPlaceText {
+  color: #e53170;
+}
+
+.TextFont {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.PeriodContainer {
+  margin: 10px 0px;
+}
+
+.PeriodText {
+  color: #a7a9be;
+}
+
+.ListContainer li {
+  color: #f2f2f2;
+  line-height: 1.5;
+  font-size: 16px;
+  margin: 5px 0px;
+}
