@@ -75,7 +75,12 @@ export default function Home() {
           id="projects"
         >
           <div className={styles.title}>Projects</div>
-          <div className={styles.MainProjectsContainer}></div>
+          <div className={styles.MainProjectsContainer}>
+            <div>
+              <div className={styles.AppImage}></div>
+              <div></div>
+            </div>
+          </div>
           <div className={styles.OtherProjectsContainer}>
             <div className={styles.SmallProjectTitle}>Small Projects</div>
             <div>
@@ -84,8 +89,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.SubContainer} id="contact">
-          <div className={styles.title}>Contact</div>
+        <div
+          className={`${styles.SubContainer} ${styles.ContactContainer}`}
+          id="contact"
+        >
+          <div className={styles.title}>Get In Touch</div>
+          <div className={styles.paragraph}>
+            Thank you for visiting my profile! If you have any opportunities,
+            please don't hesitate to reach out. I will try my best to respond
+            promptly.
+          </div>
+          <a href="mailto:clifford.chan99@gmail.com">Lets Connect</a>
         </div>
       </div>
     </Fragment>
