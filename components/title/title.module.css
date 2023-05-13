@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  color: #fffffe;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.title:hover {
+  animation: bounce-squeeze 0.3s infinite;
+  color: #e53170;
+}
+
+@keyframes bounce-squeeze {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.8);
+  }
+}

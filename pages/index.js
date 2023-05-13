@@ -1,9 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/profile.module.css";
 import { Fragment } from "react";
-import Cloud from "../components/cloud";
-import Experiences from "../components/experiences";
-import ProjectBoxes from "../components/projectBoxes";
+import { Cloud, Experiences, ProjectBoxes, Title } from "../components";
 
 export default function Home() {
   return (
@@ -11,37 +9,46 @@ export default function Home() {
       <Head>
         <title>Clifford Chan</title>
       </Head>
-      {/* https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1 */}
       <div className={styles.HeaderContainer}>
         <nav>
           <ul className={styles.NavList}>
-            <li className={styles.NavItem}>
+            <li>
               <a href="#about">About</a>
             </li>
-            <li className={styles.NavItem}>
+            <li>
               <a href="#experiences">Experiences</a>
             </li>
-            <li className={styles.NavItem}>
+            <li>
               <a href="#projects">Projects</a>
             </li>
-            <li className={styles.NavItem}>
+            <li>
               <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a
+                href="/resume.pdf"
+                download
+                className={styles.Button}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
             </li>
           </ul>
         </nav>
-        <button className={styles.Button}>Resume</button>
       </div>
 
       <div className={styles.MainContainer}>
         <div className={styles.IntroContainer}>
-          <div className={styles.IntroText}>Hi, I am</div>
-          <div className={styles.IntroText}>Clifford Chan,</div>
-          <div className={styles.IntroText}>Software Engineer.</div>
+          <Title text={"Hi, I am"} />
+          <Title text={"Clifford Chan,"} />
+          <Title text={"Software Engineer."} />
         </div>
 
         <div className={styles.SubContainer} id="about">
           <div className={styles.MeContainer}>
-            <div className={styles.title}>Me, Myself & I</div>
+            <Title text={"Me, Myself & I"} />
             <div className={styles.paragraph}>
               Hello there, I am a software engineer from Malaysia with a passion
               for full-stack development. <br />
@@ -52,10 +59,7 @@ export default function Home() {
               and I find that these hobbies help me to think creatively and
               approach problems from different angles. I am excited about the
               work I do, and I believe that my skills and interests make me an
-              asset to any team. <br />
-              <br />
-              Thank you for taking the time to learn more about me, and I look
-              forward to sharing more about my work with you.
+              asset to any team.
             </div>
           </div>
           <div className={styles.CloudContainer}>
@@ -65,7 +69,7 @@ export default function Home() {
 
         <div className={styles.SubContainer} id="experiences">
           <div className={styles.ExpContainer}>
-            <div className={styles.title}>Work Experiences</div>
+            <Title text={"Work Experiences"} />
             <Experiences />
           </div>
         </div>
@@ -74,15 +78,15 @@ export default function Home() {
           className={`${styles.SubContainer} ${styles.projectsContainer}`}
           id="projects"
         >
-          <div className={styles.title}>Projects</div>
-          <div className={styles.MainProjectsContainer}>
+          <Title text={"Projects"} />
+          {/* <div className={styles.MainProjectsContainer}>
             <div>
               <div className={styles.AppImage}></div>
               <div></div>
             </div>
-          </div>
+          </div> */}
           <div className={styles.OtherProjectsContainer}>
-            <div className={styles.SmallProjectTitle}>Small Projects</div>
+            {/* <div className={styles.SmallProjectTitle}>Small Projects</div> */}
             <div>
               <ProjectBoxes />
             </div>
@@ -93,7 +97,7 @@ export default function Home() {
           className={`${styles.SubContainer} ${styles.ContactContainer}`}
           id="contact"
         >
-          <div className={styles.title}>Get In Touch</div>
+          <Title text={"Get In Touch"} />
           <div className={styles.paragraph}>
             Thank you for visiting my profile! If you have any opportunities,
             please don't hesitate to reach out. I will try my best to respond
