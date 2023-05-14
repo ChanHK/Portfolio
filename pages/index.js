@@ -53,7 +53,7 @@ export default function Home() {
               Hello there, I am a software engineer from Malaysia with a passion
               for full-stack development. <br />
               <br />
-              When I'm not coding, I enjoy spending time outdoors, engaging in
+              When I&apos;m not coding, I enjoy spending time outdoors, engaging in
               activities that recharge my batteries, and help me to stay focused
               and productive. I am also an avid reader and a movie enthusiast,
               and I find that these hobbies help me to think creatively and
@@ -100,7 +100,7 @@ export default function Home() {
           <Title text={"Get In Touch"} />
           <div className={styles.paragraph}>
             Thank you for visiting my profile! If you have any opportunities,
-            please don't hesitate to reach out. I will try my best to respond
+            please don&apos;t hesitate to reach out. I will try my best to respond
             promptly.
           </div>
           <a href="mailto:clifford.chan99@gmail.com">Lets Connect</a>
