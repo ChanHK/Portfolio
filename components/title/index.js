@@ -11,7 +11,7 @@ class Title extends React.Component {
     return (
       <div className={styles.main}>
         {text.split("").map((char, index) => {
-          if (char === " ") return <div key={index}>&nbsp;&nbsp;&nbsp;</div>;
+          if (char === " ") return <div key={index}>`&nbsp;&nbsp;&nbsp;`</div>;
           return (
             <div key={index} className={styles.title}>
               {char}

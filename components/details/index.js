@@ -13,12 +13,15 @@ class Details extends React.Component {
       <Fragment>
         {data.map((x, index) => {
           return (
-            <div style={{ display: selected === x.id ? "block" : "none" }} key={index}>
+            <div
+              style={{ display: selected === x.id ? "block" : "none" }}
+              key={index}
+            >
               <div className={styles.RoleContainer}>
                 <div className={`${styles.RoleText} ${styles.TextFont}`}>
                   {x.role}
                 </div>
-                &nbsp;
+                `&nbsp;`
                 <div className={`${styles.WorkPlaceText} ${styles.TextFont}`}>
                   {x.wp}
                 </div>
