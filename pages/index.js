@@ -1,7 +1,13 @@
 import Head from "next/head";
 import styles from "../styles/profile.module.css";
 import { Fragment } from "react";
-import { Cloud, Experiences, ProjectBoxes, Title } from "../components";
+import {
+  Cloud,
+  Experiences,
+  ProjectBoxes,
+  Title,
+  Paragraph,
+} from "../components";
 
 export default function Home() {
   return (
@@ -49,18 +55,22 @@ export default function Home() {
         <div className={styles.SubContainer} id="about">
           <div className={styles.MeContainer}>
             <Title text={"Me, Myself & I"} />
-            <div className={styles.paragraph}>
-              Hello there, I am a software engineer from Malaysia with a passion
-              for full-stack development. <br />
-              <br />
-              When I&apos;m not coding, I enjoy spending time outdoors, engaging in
+            <Paragraph
+              sentence="Hello there, I am a software engineer from Malaysia with a passion for full-stack development."
+              speed="50"
+              delay="0"
+            />
+            <Paragraph
+              sentence="When I'm not coding, I enjoy spending time outdoors, engaging in
               activities that recharge my batteries, and help me to stay focused
-              and productive. I am also an avid reader and a movie enthusiast,
-              and I find that these hobbies help me to think creatively and
-              approach problems from different angles. I am excited about the
-              work I do, and I believe that my skills and interests make me an
-              asset to any team.
-            </div>
+              and productive. I am also an avid reader and a movie enthusiast, and
+              I find that these hobbies help me to think creatively and approach
+              problems from different angles. I am excited about the work I do,
+              and I believe that my skills and interests make me an asset to any
+              team."
+              speed="50"
+              delay="2500"
+            />
           </div>
           <div className={styles.CloudContainer}>
             <Cloud />
@@ -100,8 +110,8 @@ export default function Home() {
           <Title text={"Get In Touch"} />
           <div className={styles.paragraph}>
             Thank you for visiting my profile! If you have any opportunities,
-            please don&apos;t hesitate to reach out. I will try my best to respond
-            promptly.
+            please don&apos;t hesitate to reach out. I will try my best to
+            respond promptly.
           </div>
           <a href="mailto:clifford.chan99@gmail.com">Lets Connect</a>
         </div>
