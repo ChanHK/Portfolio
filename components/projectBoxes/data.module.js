@@ -20,6 +20,13 @@ const data = [
     des: "A simple, built for fun parallax star background.",
     tech: "HTML CSS Less"
   },
+  {
+    name: "Animation Gallery",
+    url: "https://chanhk.github.io/AnimationGallery/",
+    github: "https://github.com/ChanHK/AnimationVault",
+    des: "Showcase animations that I built for fun.",
+    tech: "HTML CSS"
+  },
   // {
   //   name: "",
   //   url: "",

@@ -55,7 +55,7 @@ export default function Home() {
         <div className={styles.SubContainer} id="about">
           <div className={styles.MeContainer}>
             <Title text={"Me, Myself & I"} />
-            <Paragraph
+            {/* <Paragraph
               sentence="Hello there, I am a software engineer from Malaysia with a passion for full-stack development."
               speed="50"
               delay="0"
@@ -70,7 +70,20 @@ export default function Home() {
               team."
               speed="50"
               delay="2500"
-            />
+            /> */}
+            <div className={styles.paragraph}>
+              Hello there, I am a software engineer from Malaysia with a passion
+              for full-stack development.
+              <br />
+              <br />
+              When I'm not coding, I enjoy spending time outdoors, engaging in
+              activities that recharge my batteries, and help me to stay focused
+              and productive. I am also an avid reader and a movie enthusiast,
+              and I find that these hobbies help me to think creatively and
+              approach problems from different angles. I am excited about the
+              work I do, and I believe that my skills and interests make me an
+              asset to any team.
+            </div>
           </div>
           <div className={styles.CloudContainer}>
             <Cloud />

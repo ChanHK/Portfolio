@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .box {
@@ -19,7 +19,7 @@
 }
 
 .box:hover {
-  animation: bounce 0.5s ease;
+  transform: translateY(-10px);
 }
 
 .box > *:last-child {
@@ -29,7 +29,6 @@
 }
 
 .logoContainer {
-  /* background-color: pink; */
   display: flex;
   justify-content: flex-end;
   gap: 15px;
@@ -62,14 +61,4 @@
 
 .tech {
   color: #fffffe;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
 }
