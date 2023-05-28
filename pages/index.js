@@ -76,7 +76,7 @@ export default function Home() {
               for full-stack development.
               <br />
               <br />
-              When I'm not coding, I enjoy spending time outdoors, engaging in
+              When I am not coding, I enjoy spending time outdoors, engaging in
               activities that recharge my batteries, and help me to stay focused
               and productive. I am also an avid reader and a movie enthusiast,
               and I find that these hobbies help me to think creatively and
