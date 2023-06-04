@@ -78,6 +78,15 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 800px) {
+  .aboutContainer {
+    --w: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .MeContainer {
   width: 50%;
   height: auto;

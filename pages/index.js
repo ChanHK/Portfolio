@@ -14,6 +14,7 @@ export default function Home() {
     <Fragment>
       <Head>
         <title>Clifford Chan</title>
+        <meta name="viewport" content="width=100vw, initial-scale=1.0" />
       </Head>
       <div className={styles.HeaderContainer}>
         <nav>
@@ -52,7 +53,7 @@ export default function Home() {
           <Title text={"Software Engineer."} />
         </div>
 
-        <div className={styles.SubContainer} id="about">
+        <div className={`${styles.SubContainer} ${styles.aboutContainer}`} id="about">
           <div className={styles.MeContainer}>
             <Title text={"Me, Myself & I"} />
             {/* <Paragraph
