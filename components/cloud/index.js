@@ -13,7 +13,7 @@ class Cloud extends React.Component {
     if (this.tagCloud === null) {
       const options = {
         keep: true,
-        radius: 250,
+        radius: 200,
         maxSpeed: "fast",
         initSpeed: "fast",
         itemClass: styles.itemClass,
