@@ -1,5 +1,5 @@
 .MainContainer {
-  height: 300px;
+  /* height: 300px; */
   width: 100%;
   max-width: 700px;
   display: flex;
@@ -43,5 +43,22 @@
 @media (max-width: 768px) {
   .TabList button {
     padding: 0px 15px 2px;
+  }
+}
+
+@media (max-width: 800px) {
+  .MainContainer {
+    flex-direction: column;
+  }
+
+  .TabList {
+    flex-direction: row;
+    overflow: scroll;
+    height: 60px;
+  }
+
+  .DetailsContainer {
+    min-width: auto;
+    padding: 0px;
   }
 }

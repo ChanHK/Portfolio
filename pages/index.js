@@ -91,7 +91,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.SubContainer} id="experiences">
+        <div className={`${styles.SubContainer} ${styles.experiencesContainer}`} id="experiences">
           <div className={styles.ExpContainer}>
             <Title text={"Work Experiences"} />
             <Experiences />

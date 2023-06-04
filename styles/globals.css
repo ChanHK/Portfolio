@@ -25,7 +25,7 @@ a {
 /* Set the width and height of the scroll bar */
 ::-webkit-scrollbar {
   width: 5px;
-  height: 10px;
+  height: 5px;
 }
 
 /* Set the background color of the scroll bar */
@@ -42,4 +42,8 @@ a {
 /* Set the color of the scroll thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
 }
