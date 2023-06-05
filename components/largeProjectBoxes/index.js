@@ -13,7 +13,7 @@ class LargeProjectBoxes extends React.Component {
       <div className={styles.boxContainer}>
         {Data.map((info, index) => {
           return (
-            <div className={styles.box}>
+            <div className={styles.box} key={index}>
               <img
                 src={info.image}
                 alt={info.image}
