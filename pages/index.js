@@ -1,7 +1,13 @@
 import Head from "next/head";
 import styles from "../styles/profile.module.css";
 import { Fragment } from "react";
-import { Cloud, Experiences, ProjectBoxes, Title } from "../components";
+import {
+  Cloud,
+  Experiences,
+  ProjectBoxes,
+  Title,
+  LargeProjectBoxes,
+} from "../components";
 
 export default function Home() {
   return (
@@ -87,10 +93,11 @@ export default function Home() {
           id="projects"
         >
           <Title text={"Projects"} />
-          <div className={styles.OtherProjectsContainer}>
-            <div>
-              <ProjectBoxes />
-            </div>
+          <div className={styles.boxesContainer}>
+            <LargeProjectBoxes />
+          </div>
+          <div className={styles.boxesContainer}>
+            <ProjectBoxes />
           </div>
         </div>
 
