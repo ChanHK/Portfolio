@@ -53,10 +53,12 @@ export default function Home() {
           <Title text={"Software Engineer."} />
         </div>
 
-        <div
-          className={`${styles.SubContainer} ${styles.aboutContainer}`}
-          id="about"
-        >
+        <div id="about">
+          <br />
+          <br />
+          <br />
+        </div>
+        <div className={`${styles.SubContainer} ${styles.aboutContainer}`}>
           <div className={styles.MeContainer}>
             <Title text={"Me, Myself & I"} />
             <div className={styles.paragraph}>
@@ -88,6 +90,11 @@ export default function Home() {
           </div>
         </div>
 
+        <div id="projects">
+          <br />
+          <br />
+          <br />
+        </div>
         <div
           className={`${styles.SubContainer} ${styles.projectsContainer}`}
           id="projects"
