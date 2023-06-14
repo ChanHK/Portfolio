@@ -90,7 +90,6 @@
 .MeContainer {
   width: 50%;
   height: auto;
-  overflow-x: hidden;
   min-width: 320px;
   display: flex;
   flex-direction: column;
@@ -103,6 +102,12 @@
   color: #a7a9be;
   font-size: 20px;
   padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .paragraph {
+    font-size: 20px;
+  }
 }
 
 .CloudContainer {
