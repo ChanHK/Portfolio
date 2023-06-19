@@ -10,7 +10,7 @@ const data = [
     name: "Shortify",
     url: "https://shoritfy-atz97ta24-chanhk.vercel.app/",
     github: "https://github.com/ChanHK/Shortify",
-    des: "This URL Shortener Microservice is a web application that allows users to shorten long URLs into shorter and more manageable links. It provides an API interface for creating and managing shortened URLs.",
+    des: "Allows users to shorten long URLs into shorter and more manageable links. It provides an API interface for creating and managing shortened URLs.",
     tech: "Nodejs Express MongoDB Jest RestApi",
   },
   {
