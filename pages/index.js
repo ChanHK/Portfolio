@@ -33,7 +33,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="/resume.pdf"
+                href="/resume2.pdf"
                 download
                 className={styles.Button}
                 target="_blank"
