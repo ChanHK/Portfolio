@@ -8,7 +8,7 @@ const data = [
   },
   {
     name: "Shortify",
-    url: "https://shoritfy-atz97ta24-chanhk.vercel.app/",
+    url: "https://shoritfy-ui.vercel.app/",
     github: "https://github.com/ChanHK/Shortify",
     des: "Allows users to shorten long URLs into shorter and more manageable links. It provides an API interface for creating and managing shortened URLs.",
     tech: "Nodejs Express MongoDB Jest RestApi",
