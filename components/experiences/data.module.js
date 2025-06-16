@@ -1,5 +1,5 @@
 const data = {
-  workplace: ["ADE", "Exact ADC", "Digi-X"],
+  workplace: ["Asia Digital Engineering", "Exact ADC", "Digi-X"],
   details: [
     {
       id: "Asia Digital Engineering",
@@ -15,6 +15,7 @@ const data = {
         "Took ownership of performance-critical backend components and led architectural improvements"
       ]
     },
+
     {
       id: "Exact ADC",
       role: "Software Engineer",

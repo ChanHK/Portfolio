@@ -7,7 +7,7 @@ class Experiences extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: "Exact ADC",
+      selected: "Asia Digital Engineering",
     };
   }
 
